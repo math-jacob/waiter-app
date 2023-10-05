@@ -96,3 +96,6 @@ Criar diretório src/app/models
 
 Criar arquivo src/app/models/Category.ts
 - Codar esse arquivo
+
+Criar arquivo src/app/models/Product.ts
+- Codar esse arquivo
