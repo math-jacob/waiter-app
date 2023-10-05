@@ -41,3 +41,18 @@ Configurando eslint
 - instala o express
 
 Codar src/index.ts
+
+## Instalando dependências adicionais
+
+"yarn add -D ts-node"
+- Dependência para rodar arquivos ts sem precisar buildar
+
+"yarn ts-node src/index.ts"
+- Roda o arquivo index.ts sem precisar buildar
+
+"yarn add -D nodemon"
+- Monitora alterações realizadas nos arquivos e restarta o server automaticamente
+
+Criar o script "dev" no package.json
+- "dev": "nodemon src/index.ts"
+- nodemon vai trabalhar em conjunto com ts-node
