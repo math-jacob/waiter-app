@@ -83,3 +83,16 @@ Como rodar um container
 "yarn add mongoose"
 - Pacote que lida com conexão e manipulação da base de dados
 - atualizar index.ts para fazer com a conexão com o BD
+
+Collections ("tabelas") e formato dos documents("registros") do BD
+- Models é a representação que o mongoose dá para os Documents do BD
+- Models (do mongoose) servem para fazer tipagem dos documentos
+- Models promovem métodos para adicionar, deletar e alterar itens do BD
+![Models](models-mongodb.png)
+
+### Criando models
+
+Criar diretório src/app/models
+
+Criar arquivo src/app/models/Category.ts
+- Codar esse arquivo
