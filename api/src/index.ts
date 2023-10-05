@@ -1,3 +1,5 @@
-const texto: string = '123241241';
+import express from 'express'
 
-console.log(texto);
+const app = express()
+
+app.listen(3001)

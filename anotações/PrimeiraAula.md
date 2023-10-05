@@ -34,3 +34,10 @@ Configurando editorconfig
 
 Configurando eslint
 - "npm init @eslint/config"
+
+## Instalando express
+
+"yarn add express"
+- instala o express
+
+Codar src/index.ts
