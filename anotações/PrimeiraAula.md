@@ -99,3 +99,9 @@ Criar arquivo src/app/models/Category.ts
 
 Criar arquivo src/app/models/Product.ts
 - Codar esse arquivo
+
+## Codando useCases
+
+Criar diretório src/useCases
+
+Codar os useCases
