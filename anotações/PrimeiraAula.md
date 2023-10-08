@@ -105,3 +105,18 @@ Criar arquivo src/app/models/Product.ts
 Criar diretório src/useCases
 
 Codar os useCases
+
+OBS: useCase createProducts
+- Precisamos fazer upload de uma imagem
+    - criar diretório uploads
+- Nesse caso o body da requisição não pode ser no formato JSON
+    - JSON só suporta texto e não arquivos
+- Temos que utilizar "Multipart Form"
+- "yarn add multer"
+    - Pacote para conseguir pegar as informações do Multipart Form e conseguir salvar as imagens no diretório uploads
+- "yarn add @types/multer"
+- Atualizar index.ts para utilizar o multer
+
+A função de upload que utilza o multer no index.ts faz
+- Upload da imagem para o diretório "uploads"
+- Faz o parse do restante dos campos do Multipar Form Data e injeta no req.body
