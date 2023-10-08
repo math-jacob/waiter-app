@@ -10,6 +10,7 @@ import { listProducts } from './app/useCases/products/listProducts'
 import { listProductsByCategory } from './app/useCases/categories/listProductsByCategory'
 import { listOrder } from './app/useCases/orders/listOrder'
 import { createOrder } from './app/useCases/orders/createOrder'
+import { changeOrderStatus } from './app/useCases/orders/changeOrderStatus'
 
 export const router = Router()
 
@@ -57,9 +58,7 @@ router.post('/orders', createOrder)
   - Muda somente uma ou poucas propriedades
 */
 // Change order status
-router.patch('/orders/:orderId', (req, res) => {
-  res.send('OK')
-})
+router.patch('/orders/:orderId', changeOrderStatus)
 
 // Delete/cancel order
 router.delete('/orders/:orderId', (req, res) => {
