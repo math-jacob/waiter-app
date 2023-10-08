@@ -3,7 +3,8 @@ import { Order } from '../../models/Order'
 
 export async function listOrder(req: Request, res: Response) {
   try {
-    const orders = await Order.find()
+    // populate traz todas as informações de determinada entidade ao invés de somente o ID
+    const orders = await Order.find().populate('products.product')
 
     res.json(orders)
   } catch (err) {
