@@ -1,7 +1,7 @@
 import { model, Schema } from 'mongoose'
 
 // Criando a entidade Category
-export const Categorey = model('Order', new Schema({
+export const Order = model('Order', new Schema({
   table: {
     type: String,
     required: true,
