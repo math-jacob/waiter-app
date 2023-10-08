@@ -120,3 +120,8 @@ OBS: useCase createProducts
 A função de upload que utilza o multer no index.ts faz
 - Upload da imagem para o diretório "uploads"
 - Faz o parse do restante dos campos do Multipar Form Data e injeta no req.body
+
+Backend precisa disponibilizar uma forma de acessar os arquivos de uploads
+- Arquivos do diretório uploads são arquivos estáticos
+- Quando usuario acessar "/uploads/{nome_do_arquivo}" a API deve fornecer o arquivo e não tratar essa requisição como se fosse uma rota
+- Codar STATIC PATH no index.ts
