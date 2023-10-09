@@ -61,8 +61,14 @@ Codar arquivo GlobalStyles.ts
 
 Editar App.tsx para incluir GlobalStyles
 
-## Desenvolvendo o header
+## Desenvolvendo o componente Header
 
 Criar diretório src/components/Header
+- Codar arquivo index.tsx
+- Codar arquivo styles.ts
+
+## Desenvolvendo o componente Orders
+
+Criar diretório src/components/Orders
 - Codar arquivo index.tsx
 - Codar arquivo styles.ts
