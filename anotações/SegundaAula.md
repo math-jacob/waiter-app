@@ -38,3 +38,23 @@ Arquivo index.html
 No index.html
 - Trocar o título da página
 - Comentar o favic (opcional)
+
+## Biblioteca Styled Components
+
+CSS-in-JS
+- css escrito dentro do javascript
+
+Styled Components
+- Pacote que implementa CSS-in-JS
+- "yarn add styled-components"
+- "yarn add -D @types/styled-components"
+- Instalar a extensão "styled components" do VS code
+
+## Iniciando o desenvolvimento
+
+- criar diretório src/styles
+- criar arquivo GlobalStyles.ts
+- copiar diretório assets no github da aula
+
+Codar arquivo GlobalStyles.ts
+- Código dos estilos globais
