@@ -1,4 +1,5 @@
 import { GlobalStyles } from './styles/GlobalStyles'
+import { Header } from './components/Header/index'
 
 /**
  * React Fragment <> </> é utilizado para contornar a regra JSX:
@@ -9,7 +10,7 @@ export function App() {
   return (
     <>
       <GlobalStyles />
-      <h1>Hello world</h1>
+      <Header />
     </>
   )
 }

@@ -50,7 +50,7 @@ Styled Components
 - "yarn add -D @types/styled-components"
 - Instalar a extensão "styled components" do VS code
 
-## Iniciando o desenvolvimento
+## Estilização global e assets
 
 - criar diretório src/styles
 - criar arquivo GlobalStyles.ts
@@ -60,3 +60,9 @@ Codar arquivo GlobalStyles.ts
 - Código dos estilos globais
 
 Editar App.tsx para incluir GlobalStyles
+
+## Desenvolvendo o header
+
+Criar diretório src/components/Header
+- Codar arquivo index.tsx
+- Codar arquivo styles.ts
