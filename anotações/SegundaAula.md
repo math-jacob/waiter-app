@@ -58,3 +58,5 @@ Styled Components
 
 Codar arquivo GlobalStyles.ts
 - Código dos estilos globais
+
+Editar App.tsx para incluir GlobalStyles
