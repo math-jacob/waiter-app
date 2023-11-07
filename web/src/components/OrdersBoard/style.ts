@@ -11,6 +11,7 @@ export const Board = styled.div`
   flex-direction: column;
   align-items: center;
 
+  // O seguinte estilo só vai se aplicar para headers que são filhos diretos do componente Board
   > header {
     padding: 8px;
     font-size: 14px;
