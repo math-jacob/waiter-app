@@ -14,13 +14,17 @@ export function OrdersBoard({ icon, title, orders }: OrdersBoardProps) {
   // state para verificar se o modal foi aberto ou não
   const [isModalVisible, setIsModalVisible] = useState(false)
 
-  function handleOpenModal() {
+  // state para controlar qual pedido o usuario clicou e passar para o componente OrderModal
+  const [selectedOrder, setSelectedOrder] = useState<Order | null>(null)
+
+  function handleOpenModal(order: Order) {
     setIsModalVisible(true)
+    setSelectedOrder(order)
   }
 
   return (
     <Board>
-      <OrderModal visible={isModalVisible} />
+      <OrderModal visible={isModalVisible} order={selectedOrder}/>
 
       <header>
         <span>{icon}</span>
@@ -31,7 +35,7 @@ export function OrdersBoard({ icon, title, orders }: OrdersBoardProps) {
       {orders.length > 0 && (
         <OrdersContainer>
           {orders.map((order) => (
-            <button type='button' key={order._id} onClick={handleOpenModal}>
+            <button type='button' key={order._id} onClick={() => handleOpenModal(order)}>
               <strong>Mesa {order.table}</strong>
               <span>{order.products.length} itens</span>
             </button>
