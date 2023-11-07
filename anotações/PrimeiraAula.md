@@ -115,9 +115,9 @@ OBS: useCase createProducts
 - "yarn add multer"
     - Pacote para conseguir pegar as informações do Multipart Form e conseguir salvar as imagens no diretório uploads
 - "yarn add @types/multer"
-- Atualizar index.ts para utilizar o multer
+- Atualizar router.ts para utilizar o multer
 
-A função de upload que utilza o multer no index.ts faz
+A função de upload que utilza o multer no router.ts faz
 - Upload da imagem para o diretório "uploads"
 - Faz o parse do restante dos campos do Multipar Form Data e injeta no req.body
 
