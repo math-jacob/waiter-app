@@ -16,7 +16,7 @@ export function OrderModal({ visible, order }: OrderModalProps) {
     <Overlay>
       <ModalBody>
         <header>
-          <strong>Mesa 2</strong>
+          <strong>Mesa {order.table}</strong>
 
           <button type='button'>
             <img src={closeIcon} alt="Íconde de fechar" />
@@ -26,8 +26,17 @@ export function OrderModal({ visible, order }: OrderModalProps) {
         <div className="status-container">
           <small>Status do Pedido</small>
           <div>
-            <span>🕑</span>
-            <strong>Fila de espera</strong>
+            <span>
+              {order.status === 'WAITING' && '🕑'}
+              {order.status === 'IN_PRODUCTION' && '👩‍🍳'}
+              {order.status === 'DONE' && '✅'}
+            </span>
+
+            <strong>
+              {order.status === 'WAITING' && 'Fila de espera'}
+              {order.status === 'IN_PRODUCTION' && 'Em produção'}
+              {order.status === 'DONE' && 'Pronto'}
+            </strong>
           </div>
         </div>
 
