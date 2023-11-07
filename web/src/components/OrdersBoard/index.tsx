@@ -8,6 +8,7 @@ interface OrdersBoardProps {
 }
 
 export function OrdersBoard({ icon, title, orders }: OrdersBoardProps) {
+
   return (
     <Board>
       <header>

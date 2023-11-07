@@ -75,3 +75,14 @@ Criar diretório src/components/Orders
 
 OBS: Criou-se um componente OrdersBoard para tratar os diferentes boards "Fila de espera, Em produção, Pronto!"
 - No style.ts, OrdersContainer tem um botão pois devemos utilizar a propriedade onClick para abrir o modal com os detalhes do pedido
+
+### Criando o modal com os detalhes do pedido
+
+function handleOpenOrder() no componente OrdersBoard
+- Função deve renderizar o componente
+
+### Desenvolvendo o componente OrderModal
+
+Criar diretório src/components/OrderModal
+- Codar arquivo index.tsx
+- Codar arquivo styles.ts
