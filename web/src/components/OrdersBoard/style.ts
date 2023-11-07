@@ -12,7 +12,6 @@ export const Board = styled.div`
   align-items: center;
 
   header {
-    flex: 1;
     padding: 8px;
     font-size: 14px;
 
