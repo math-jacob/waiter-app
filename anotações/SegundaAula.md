@@ -81,8 +81,13 @@ OBS: Criou-se um componente OrdersBoard para tratar os diferentes boards "Fila d
 function handleOpenOrder() no componente OrdersBoard
 - Função deve renderizar o componente
 
-### Desenvolvendo o componente OrderModal
+## Desenvolvendo o componente OrderModal
 
 Criar diretório src/components/OrderModal
 - Codar arquivo index.tsx
 - Codar arquivo styles.ts
+
+Devemos atualizar o componente OrdersBoard para utilizar desenvolver o OrderModal!!
+
+Criar arquivo src/utils/formatCurrency.ts
+- Esse arquivo vai ter uma função para tratar a formatação dos valores
